@@ -28,11 +28,13 @@ export class BetterHighlightDirective implements OnInit {
   // @HostBinding('style.backgroundColor') backgroundColor: string = 'transparent';
 
   // binding to Directive Properties **
-  @HostBinding('style.backgroundColor') backgroundColor: string = this.defaultColor;
+  @HostBinding('style.backgroundColor') backgroundColor: string;
   
   constructor( private elRef: ElementRef, private renderer: Renderer2 ) {};
 
-  ngOnInit() { };
+  ngOnInit() { 
+      this.backgroundColor = this.defaultColor;
+  };
 
   // this can be triggered whenever some event occurs - LISTENS to events on element
   // HostListener: takes in the argument name as an input

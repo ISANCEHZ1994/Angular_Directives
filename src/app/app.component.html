@@ -31,7 +31,13 @@
       </ul>
       <p appBasicHighlight>  Style me with basic directive..</p>
       <p appBetterHighlight3>Style me with basic3 directive..</p>
-      <p appBetterHighlight> Style me with better directive..</p>
+      <p 
+        appBetterHighlight 
+        [defaultColor]="'blue'" 
+        [highlightColor]="'purple'"> Style me with better directive..</p>
+      <p 
+        [appBetterHighlight5]="'gold'" 
+        [defaultColor]="'turquoise'">Style me with better5 directive..</p>
       <p appBetterHighlight2>Style me with better2 directive..</p>
       <p appBetterHighlight4>Style me with better4 directive..</p>
     </div>
