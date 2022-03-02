@@ -13,5 +13,7 @@ export class BasicHighlightDirective implements OnInit{
         this.elementRef.nativeElement.style.backgroundColor = 'green';
     }
 
+    // a shortcut to create a DIRECTIVE:
+    // COMMAND: ng g d <NAME_OF_DIRECTIVE>
 }
 
