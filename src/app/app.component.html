@@ -1,5 +1,6 @@
-<!-- Recap: ngFor and ngIf -->
+
 <div class="container">
+  <!-- Recap: ngFor and ngIf -->
   <div class="row">
     <div class="col-xs-12">
       <button
@@ -22,13 +23,15 @@
           <li 
             class="list-group-item"
             *ngFor="let even of evenNumbers"
-            [ngClass]="{odd: even % 2 !== 0}"
-            [ngStyle]="{backgroundColor: even % 2 !== 0 ? 'yellow' : 'transparent'}"            
+            [ngClass]="{ odd: even % 2 !== 0 }"
+            [ngStyle]="{ backgroundColor: even % 2 !== 0 ? 'yellow' : 'transparent' }"            
           >
             {{ even }}
           </li>
         </div>        
       </ul>
+      <!-- END of Recap: ngFor and ngIf -->
+
       <p appBasicHighlight>  Style me with basic directive..</p>
       <p appBetterHighlight3>Style me with basic3 directive..</p>
       <p 
@@ -44,7 +47,9 @@
   </div>
 </div>
 
-<!-- 
+<!--  
+  ============== [ GENERAL NOTES ] ===============
+
   Attribute Directives:
     * Loook like a normal HTML attribute (possibly with databinding or event binding)
     * Only affect/change the element they are added to 

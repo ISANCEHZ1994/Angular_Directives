@@ -5,7 +5,8 @@ import {
   HostListener, 
   Input, 
   OnInit, 
-  Renderer2  } from '@angular/core';
+  Renderer2  
+} from '@angular/core';
 
 @Directive({
   selector: '[appBetterHighlight5]'

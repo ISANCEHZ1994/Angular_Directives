@@ -10,6 +10,7 @@ import { BetterHighlight2Directive } from './better-highlight2.directive/better-
 import { BetterHighlight3Directive } from './better-highlight3.directive/better-highlight3.directive';
 import { BetterHighlight4Directive } from './better-highlight4.directive/better-highlight4.directive';
 import { BetterHighlight5Directive } from './better-highlight5.directive/better-highlight5.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BetterHighlight5Directive } from './better-highlight5.directive/better-
     BetterHighlight2Directive,
     BetterHighlight3Directive,
     BetterHighlight4Directive,
-    BetterHighlight5Directive
+    BetterHighlight5Directive,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
